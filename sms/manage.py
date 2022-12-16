@@ -1,3 +1,11 @@
+'''
+Author: Zongzi haolin1021@gmail.com
+Date: 2022-12-16 11:17:47
+LastEditors: Zongzi haolin1021@gmail.com
+LastEditTime: 2022-12-16 11:28:40
+FilePath: /sms_project/sms/manage.py
+Description: 
+'''
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
@@ -6,7 +14,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sms.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sms.settings.develop')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
